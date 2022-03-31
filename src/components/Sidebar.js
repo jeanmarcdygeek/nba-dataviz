@@ -64,7 +64,7 @@ function SideBar(props) {
                   role="tab"
                   onClick={(e)=>moveToScreen(e,3)}
                   > 
-                    Team Comparison
+                    Best Colleges and Players performances
                   </NavLink>
               </NavItem>  
 
@@ -75,7 +75,7 @@ function SideBar(props) {
                   role="tab"
                   onClick={(e)=>moveToScreen(e,4)}
                   > 
-                    NBA Talents distribution 
+                    Characteristics distributions
                   </NavLink>
               </NavItem>   
 

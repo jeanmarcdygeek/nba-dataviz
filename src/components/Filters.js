@@ -3,8 +3,8 @@ const TITLES = [
   "Welcome Dear User",
   "NBA Drafted players origins",
   "NBA Drafting strategy evolution",
-  "Compare two teams players",
-  "Distributions of Drafted players",
+  "Best Colleges and Yearly performances",
+  "Distributions of the characteristics of Drafted players",
 ]
 
 function Filters(props) {

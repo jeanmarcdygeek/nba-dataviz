@@ -16,7 +16,9 @@ import TeamComparisonPlots from './screens/TeamComparisonPlot';
 const links = [
   "http://public.tableau.com/views/RegionalSampleWorkbook/Storms",
   "https://public.tableau.com/views/NBAMAP/Sheet1",
-  "https://public.tableau.com/shared/FPF8YTYBB"
+  "https://public.tableau.com/shared/FPF8YTYBB",
+  "https://public.tableau.com/shared/HH22SPX4Y",
+  "https://public.tableau.com/views/first_test_16484768703360/Tableaudebord1?:language=fr-FR&:display_count=n&:origin=viz_share_link"
 ]
 
 function App() {
@@ -34,38 +36,7 @@ function App() {
         {currentScreen === null ?(
           <Dashboard currentScreen={0}></Dashboard>
         ):(
-          <>
-                    {
-                        currentScreen === 1 ? (
-                            <>
-                                <TableauEmbed url="https://public.tableau.com/views/NBAMAP/Sheet1"></TableauEmbed>
-                            </>
-                        ):( <>
-                            {
-                                currentScreen == 2 ? (
-                                    <>
-                                        <TableauEmbed url="https://public.tableau.com/shared/FPF8YTYBB"></TableauEmbed>
-                                    </>
-                                    ) : (
-                                        <>
-                                            {
-                                                currentScreen == 3 ? (
-                                                    <>
-                                                        <TeamComparisonPlots></TeamComparisonPlots>
-                                                    </>
-                                                ) : (
-                                                    <>
-                                                        <DistributionPlots></DistributionPlots>
-                                                    </>
-                                                )
-                                            }
-                                        </>
-                                    )
-                            }
-                            </>
-                        )
-                    }
-                </>
+          <TableauEmbed url={links[currentScreen]}></TableauEmbed>
         )}
         
       </div>

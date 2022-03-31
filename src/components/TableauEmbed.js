@@ -1,17 +1,28 @@
 import React,{useRef,useEffect} from "react";
 
+
 const {tableau} = window
 
 function TableauEmbed(props) {
     const defaultURL = "http://public.tableau.com/views/RegionalSampleWorkbook/Storms"
     const ref = useRef(null)
+    const [viz,setViz] = React.useState(null)
     
     const initViz = () => {
-        let url = props.url ? props.url : defaultURL;
-        while (ref.current.hasChildNodes()) {
-            ref.current.removeChild(ref.current.lastChild);
+        let options = {
+            'device' :"desktop"
         }
-        new tableau.Viz(ref.current,url)
+        if(!viz){
+            let url = props.url ? props.url : defaultURL;
+            setViz(new tableau.Viz(ref.current,url,options))
+        } else {
+            viz.dispose()
+            let url = props.url ? props.url : defaultURL;
+            setViz(new tableau.Viz(ref.current,url,options))
+
+
+        }
+        
     }
 
     useEffect(
