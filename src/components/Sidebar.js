@@ -59,7 +59,7 @@ function SideBar(props) {
                   role="tab"
                   onClick={(e)=>moveToScreen(e,2)}
                   > 
-                    Strategy evolution
+                    NBA performance tool
                   </NavLink>
               </NavItem>
 
@@ -70,7 +70,7 @@ function SideBar(props) {
                   role="tab"
                   onClick={(e)=>moveToScreen(e,3)}
                   > 
-                    Best Colleges and Players performances
+                    Best college and draft pick 1 performance
                   </NavLink>
               </NavItem>  
 

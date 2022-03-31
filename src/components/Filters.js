@@ -2,8 +2,8 @@
 const TITLES = [
   "Welcome Dear User",
   "NBA Drafted players origins",
-  "NBA Drafting strategy evolution",
-  "Best Colleges and Yearly performances",
+  "NBA performance tool",
+  "Best performance college and 1st drafted players performances",
   "Distributions of the characteristics of Drafted players",
   "Team performances and players attribute comparisons"
 ]
