@@ -18,7 +18,8 @@ const links = [
   "https://public.tableau.com/views/NBAMAP/Sheet1",
   "https://public.tableau.com/shared/FPF8YTYBB",
   "https://public.tableau.com/shared/HH22SPX4Y",
-  "https://public.tableau.com/views/first_test_16484768703360/Tableaudebord1?:language=fr-FR&:display_count=n&:origin=viz_share_link"
+  "https://public.tableau.com/views/first_test_16484768703360/Tableaudebord1",
+  "https://public.tableau.com/views/NBA_EDA_pivoted_data/Dashboard1"
 ]
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
       <SideBar changeScreen={setCurrentScreen}></SideBar>
       <div className="DashBoard-Container">
         <Filters currentScreen={currentScreen}></Filters>
-        {currentScreen === null ?(
+        {currentScreen === null || currentScreen===0 ?(
           <Dashboard currentScreen={0}></Dashboard>
         ):(
           <TableauEmbed url={links[currentScreen]}></TableauEmbed>

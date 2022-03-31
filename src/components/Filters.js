@@ -5,6 +5,7 @@ const TITLES = [
   "NBA Drafting strategy evolution",
   "Best Colleges and Yearly performances",
   "Distributions of the characteristics of Drafted players",
+  "Team performances and players attribute comparisons"
 ]
 
 function Filters(props) {

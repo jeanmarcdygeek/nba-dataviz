@@ -23,7 +23,13 @@ function SideBar(props) {
     }
     return (
       <div className="Sidebar">
-          <TopBar></TopBar>
+          <div
+            onClick={(e)=>moveToScreen(e,0)}
+            className="click-div"
+          >
+            <TopBar></TopBar>
+          </div>
+          
           <p className="Desctiption">
               NBA historically drafted players visualization and comparison
           </p>
@@ -78,6 +84,17 @@ function SideBar(props) {
                     Characteristics distributions
                   </NavLink>
               </NavItem>   
+
+              <NavItem>
+                <NavLink  
+                  href="#" 
+                  className="NLink"
+                  role="tab"
+                  onClick={(e)=>moveToScreen(e,5)}
+                  > 
+                    Team comparison
+                  </NavLink>
+              </NavItem>  
 
             </Nav>
           </div>

@@ -44,7 +44,9 @@
   
 }
 
-
+.click-div {
+  cursor: pointer;
+}
 .TopBar {
   height: 60px;
   width: 100%;
